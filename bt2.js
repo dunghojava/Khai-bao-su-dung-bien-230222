@@ -11,35 +11,18 @@ function tinh() {
     if (sl1 == sl2) {
         document.write(i);
     }
-    else {
-        if (sl1 == 'vn' && sl2 == 'eur') {
-            document.write(i/25771);
-        }
-        else {
-            if (sl1 == 'vn' && sl2 == 'usd') {
-                document.write(i/22810);
-            }
-            else {
-                if (sl1 == 'usd' && sl2 == 'eur') {
-                    document.write(i*0.8833);
-                }
-                else {
-                    if (sl1 == 'usd' && sl2 == 'vn') {
-                        document.write(i*22810);
-                    }
-                    else {
-                        if (sl1 == 'eur' && sl2 == 'vn') {
-                            document.write(i*25771);
-                        }
-                        else {
-                            if (sl1 == 'eur' && sl2 == 'usd') {
-                                document.write(i*1.1321);
-                            }
-                        }
-                    }
-                }
-            }
-        }
+    else if (sl1 == 'vn' && sl2 == 'eur') {
+        document.write(i/25771);
+    } else if (sl1 == 'vn' && sl2 == 'eur') {
+        document.write(i/25771);
+    } else if (sl1 == 'usd' && sl2 == 'eur') {
+        document.write(i*0.8833);
+    } else if (sl1 == 'usd' && sl2 == 'vn') {
+        document.write(i*22810);
+    } else if (sl1 == 'eur' && sl2 == 'vn') {
+        document.write(i*25771);
+    } else {
+        document.write(i*1.1321);
     }
 
 }
