@@ -1,0 +1,12 @@
+let ly;
+let hoa;
+let sinh;
+ly = prompt('Nhập điểm vật lý');
+hoa = prompt('Nhập điểm hóa');
+sinh = prompt('Nhập điểm sinh');
+let l = parseInt(ly);
+let h = parseInt(hoa);
+let s = parseInt(sinh);
+let trungbinh = (l + h + s) / 3;
+let tb = parseInt(trungbinh);
+document.write('Trung bình môn là ', tb);
