@@ -1,10 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+        <link rel="stylesheet" href="bt3.css">
 
-</body>
+    </head>
+    <body>
+    <br>
+        <input class="inp" type="text" id="scr"><br>
+    <table>
+        <tr>
+            <td><button class="btn" onclick="nhap(7)">7</button></td>
+            <td><button class="btn" onclick="nhap(8)">8</button></td>
+            <td><button class="btn" onclick="nhap(9)">9</button></td>
+            <td><button class="btn" onclick="nhap('/')">/</button></td>
+            <td rowspan="4"><button class="ac" onclick="xoa()">AC</button></td>
+        </tr>
+        <tr>
+            <td><button class="btn" onclick="nhap(4)">4</button></td>
+            <td><button class="btn" onclick="nhap(5)">5</button></td>
+            <td><button class="btn" onclick="nhap(6)">6</button></td>
+            <td><button class="btn" onclick="nhap('*')">x</button></td>
+        </tr>
+        <tr>
+           <td><button class="btn" onclick="nhap(1)">1</button></td>
+           <td><button class="btn" onclick="nhap(2)">2</button></td>
+           <td><button class="btn" onclick="nhap(3)">3</button></td>
+           <td><button class="btn" onclick="nhap('-')">-</button></td>
+        </tr>
+        <tr>
+            <td><button class="btn" onclick="nhap(0)">0</button></td>
+            <td><button class="btn" onclick="nhap('.')">.</button></td>
+            <td><button class="btn" onclick="tinh()">=</button></td>
+            <td><button class="btn" onclick="nhap('+')">+</button></td>
+        </tr>
+    </table>
+    <script>
+        function nhap(data) {
+            document.getElementById('scr').value += data;
+        }
+        function tinh() {
+            document.getElementById('scr').value = eval(document.getElementById('scr').value);
+        }
+        function xoa() {
+            document.getElementById('scr').value = '';
+        }
+    </script>
+    </body>
 </html>

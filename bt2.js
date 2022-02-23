@@ -10,8 +10,7 @@ function tinh() {
     let sl2 = document.getElementById('select2').value;
     if (sl1 == sl2) {
         document.write(i);
-    }
-    else if (sl1 == 'vn' && sl2 == 'eur') {
+    } else if (sl1 == 'vn' && sl2 == 'eur') {
         document.write(i/25771);
     } else if (sl1 == 'vn' && sl2 == 'eur') {
         document.write(i/25771);
