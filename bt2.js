@@ -20,12 +20,12 @@ function tinh() {
                 document.write(i/22810);
             }
             else {
-                if (sl1 == 'usd' && sl2 == 'vnd') {
-                    document.write(i*22810);
+                if (sl1 == 'usd' && sl2 == 'eur') {
+                    document.write(i*0.8833);
                 }
                 else {
-                    if (sl1 == 'usd' && sl2 == 'eur') {
-                        document.write(i*0.8833);
+                    if (sl1 == 'usd' && sl2 == 'vn') {
+                        document.write(i*22810);
                     }
                     else {
                         if (sl1 == 'eur' && sl2 == 'vn') {

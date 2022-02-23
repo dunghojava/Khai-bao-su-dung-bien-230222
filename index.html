@@ -6,6 +6,24 @@
     <script src="khaibaobien.js"></script>
 </head>
 <body>
+    <br>
+    <input type="text" id="scr">
+    <button onclick="nhapMot(1)">1</button>
+    <button onclick="nhapMot(2)">2</button>
+    <button onclick="nhapMot('+')">+</button>
+    <button onclick="tinh()">=</button>
+    <button onclick="xoahet()">AC</button>
 
+    <script>
+        function nhapMot(data) {
+            document.getElementById('scr').value += data;
+        }
+        function tinh() {
+            document.getElementById('scr').value = eval(document.getElementById('scr').value)
+        }
+        function xoahet() {
+            document.getElementById('scr').value = ''
+        }
+    </script>
 </body>
 </html>
